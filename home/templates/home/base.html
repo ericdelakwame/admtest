@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title %}African Design Matters{% endblock title %} </title>
+    <link rel="stylesheet" href="{% static 'home/css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
+    
+</head>
+<body>
+
+    <div id="header">
+        <div id="brand">
+            <!-- <img src="{% static 'home/images/main_logo.png' %}" alt=""> -->
+        </div>
+        <div class="links">
+          
+        </div>
+
+    </div>
+
+    
+    {% block content %}
+        
+    {% endblock content %}
+
+    
+    {% block jscript %}
+        
+    {% endblock jscript %}
+
+    
+    {% block javascript %}
+        
+    {% endblock javascript %}
+        
+        
+        
+    
+</body>
+</html>
